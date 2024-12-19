@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -30,4 +33,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todoForm {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todoInput {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addButton {
+  padding: 0.5rem 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #0052a3;
+}
+
+.todoLists {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.todoSection h2 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.todoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.completed .timestamp {
+  color: #999;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #888;
 }
