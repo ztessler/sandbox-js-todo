@@ -1,5 +1,8 @@
 import { Component, createSignal, For, createEffect } from "solid-js";
 import styles from "./App.module.css";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+injectSpeedInsights();
 
 type TodoItem = {
   id: number;
